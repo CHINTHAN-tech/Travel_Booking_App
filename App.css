@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Croissant+One&family=REM:wght@300&family=Roboto&display=swap');
+   
+   .App{
+   background-image: url('https://cdn.pixabay.com/photo/2018/02/17/22/57/snow-3161134_1280.jpg');
+   }
+
+  @keyframes runRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .running-text {
+    animation: runRightToLeft 6s linear infinite;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    width: 300px;
+    max-width: 100%;
+    font-size: 50px;
+  }
+  

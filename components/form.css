@@ -1,0 +1,77 @@
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  background-image: url('../Imgs/aurora-borealis-4965488_1280.png');
+  object-fit: cover;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 414px) {
+  main .header {
+    margin-bottom: 70px !important;
+  }
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    max-width: 100%;
+    background-color: rgb(235, 91, 197);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  input {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #00ff62;
+    color: rgb(212, 67, 67);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media (max-width: 414px) {
+    label {
+      margin: 5px 0;
+    }
+  
+    input {
+      padding: 5px;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 414px) {
+    .form {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.B
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: #F9F9F9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a,
+button {
+  color: #087042;
+}
+button:hover{
+    background-color: lightslategray;
+    color: #111;
+    box-shadow: 0 0 5px gray,0 0 25px gray,0 0 100px gray,0 0 150px gray,;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: min(30vh, 5em);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .Bg{
+  background-image: url('../Imgs/beach.png');
+}
+
+
+main .header {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+  main .header {
+    margin-bottom: 70px !important;
+  }
+}
+main .header h1 {
+  font-weight: 2000;
+  font-size: 5rem;
+  margin: 5px -5px 15px;
+  color: red;
+}
+main .header span {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  color: purple
+}
+main .header p {
+  max-width: min(40ch, 100% - 2rem);
+  line-height: 1.1;
+  color: #e86215;
+}
+main .item {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 20px;
+ 
+}
+
+main .item img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  position: relative; 
+  margin-right: 30px; 
+  display: flex;
+ 
+
+}
+
+main .item img:hover {
+  opacity: 0.8; /* Reduce opacity on hover (adjust as needed) */
+  transform: scale(1.05); /* Scale up the image on hover (adjust as needed) */
+  transition: opacity 0.3s, transform 0.3s; /* Add smooth transition effect */
+}
+
+main .item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 28px 25px;
+  color: #fff;
+  background: #020024;
+  background: linear-gradient(0deg, #020024 0%, #000032a1 3%, #17d9ff00 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .item .overlay span {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 60px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+main .item .overlay > div h2 {
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.owl-nav {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+@media screen and (max-width: 414px) {
+  .owl-nav {
+    top: -60px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .item {
+    width: 33.33%; /* Display three items per row */
+  }
+}
+.owl-nav button {
+  background: #fff !important;
+  width: 45px;
+  height: 45px;
+  font-size: 25px !important;
+  box-shadow: 0px 0px 17px #00000005;
+  border-radius: 50%;
+}
+.owl-nav button:nth-of-type(1) {
+  margin-right: 13px;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #151212;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+}
+
+@media screen and (max-width: 414px) {
+  main .header h1 {
+    font-size: 3rem;
+  }
+}
